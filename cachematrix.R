@@ -1,5 +1,15 @@
 
-## makeCashematrix function takes a matrix and returns a list of the function within the makecacheMatrix function
+## There are two functions defined here to calculate
+##and return the inverse of an inversible matrix given by the first function. 
+## For a given matrix, when the makeCacheMatrix() is assigined to a variable
+## and the CacheSolve() function is called on this variable, it checkes the  
+##inverse of that matrix within the functions inside the makeCacheMatrix().
+##if found will return the value. if vale is NULL will calculate the inverse using the 
+## setinverse() function and reassign the value of the original matrix.
+## anytime the CacheSolve() function is run after the first run, the value will be accessed from the saved value  
+## from makeCacheMatrix() environment along with a message that the value was 
+## previously calculated. Every time an inverse of a new matrix needs to be 
+## calculated, the entire process is repeated.  
 
 makeCacheMatrix <- function(x=matrix()) {       
         M <- NULL 

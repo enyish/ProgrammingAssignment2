@@ -1,4 +1,4 @@
-
+################################################################################
 ## There are two functions defined here to calculate
 ##and return the inverse of an inversible matrix given by the first function. 
 ## For a given matrix, when the makeCacheMatrix() is assigined to a variable
@@ -35,6 +35,7 @@ makeCacheMatrix <- function(x=matrix()) {
 ##and tried to get the inverse of M.
 ##If M is already calculated it returns that value,
 ##if not it calculates M,saves it using setinverse() & return M. 
+
 CacheSolve <- function(x,...){                
         M <-x$getinverse()                        
         if(!is.null(M)){                        
